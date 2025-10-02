@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Brain, Mail, Lock, Sparkles } from 'lucide-react';
+import { Mail, Lock, Sparkles } from 'lucide-react';
 import Background3D from '@/components/Background3D';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,14 +23,16 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
       <Background3D />
-      {/* Animated Background Elements - removed, using 3D instead */}
 
       <div className="w-full max-w-md relative z-10">
         {/* Logo Section */}
         <div className="text-center mb-8 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary to-cyan-500 rounded-2xl shadow-ai-glow mb-4 ai-pulse">
-            <Brain className="w-8 h-8 text-white" />
-          </div>
+          {/* Replace Brain icon with logo.png */}
+          <img 
+            src="/logo.png" 
+            alt="Rake Mind Logo" 
+            className="w-16 h-16 mx-auto mb-4 object-contain"
+          />
           <h1 className="text-4xl font-montserrat font-bold text-gradient-gold mb-2">
             Smart Rake Planner
           </h1>
