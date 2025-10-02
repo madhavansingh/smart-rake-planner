@@ -1,8 +1,7 @@
 # 🚀 Smart Rake Planner
 
-**🌐 Live Demo:** [https://smart-rake-planner.vercel.app/profile](https://smart-rake-planner.vercel.app/profile)
+**🌐 Live Demo:** [Smart Rake Planner](https://smart-rake-planner.vercel.app)
 
----
 
 ## 📌 Project Overview
 
@@ -75,7 +74,7 @@ Smart Rake Planner **simulates an AI-powered system** that provides optimized ra
 **Smart Rake Planner** acts as a **digital logistics assistant**, simulating AI-powered optimization for rake formation.  
 With **preloaded recommendations, interactive dashboards, and visual analytics**, it helps organizations like **SAIL** streamline operations, **reduce costs**, and **improve delivery performance**.  
 
-**🌐 Live Demo:** [https://smart-rake-planner.vercel.app/profile](https://smart-rake-planner.vercel.app/profile)
+**🌐 Live Demo:** [Smart Rake Planner](https://smart-rake-planner.vercel.app)
 
 ---
 
