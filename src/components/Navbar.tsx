@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Package, FileText, Warehouse, BarChart3, User, LogOut, Brain } from 'lucide-react';
+import { LayoutDashboard, Package, FileText, Warehouse, BarChart3, User, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -24,9 +24,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/dashboard" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-secondary to-cyan-500 rounded-lg flex items-center justify-center shadow-ai-glow group-hover:scale-110 transition-transform ai-pulse">
-              <Brain className="w-6 h-6 text-white" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Rake Mind Logo" 
+              className="w-10 h-10 rounded-lg object-contain shadow-ai-glow group-hover:scale-110 transition-transform"
+            />
             <div>
               <h1 className="text-xl font-montserrat font-bold text-gradient-gold">
                 Smart Rake Planner
