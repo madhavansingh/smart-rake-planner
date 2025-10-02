@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# 🚀 Smart Rake Planner
 
-## Project info
+**🌐 Live Demo:** [https://smart-rake-planner.vercel.app/profile](https://smart-rake-planner.vercel.app/profile)
 
-**URL**: https://lovable.dev/projects/20ae0370-4d02-4e8f-9537-19a9d0822432
+---
 
-## How can I edit this code?
+## 📌 Project Overview
 
-There are several ways of editing your application.
+**Smart Rake Planner** is an **AI/ML-inspired decision support system** designed to **optimize rake formation strategies** for large-scale steel logistics.  
+It focuses on movements from **Bokaro Steel Plant to CMO stockyards and customer locations**.  
 
-**Use Lovable**
+Rakes are full train-loads of wagons transporting bulk materials like **coal, iron ore, limestone, or finished goods**.  
+Manual rake planning leads to:  
+- ⏰ Delays in dispatch  
+- 🚂 Underutilized rakes  
+- 💰 Increased freight & penalties  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/20ae0370-4d02-4e8f-9537-19a9d0822432) and start prompting.
+Smart Rake Planner **simulates an AI-powered system** that provides optimized rake plans to improve efficiency, reduce costs, and ensure timely deliveries.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🎯 Objectives
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Optimize Rake Formation:** Suggest best rake compositions based on material availability, pending orders, priority, and wagons.  
+2. **Enhance Efficiency:** Ensure rakes are fully loaded and sourced from cost-effective stockyards.  
+3. **Minimize Logistics Costs:** Reduce freight, loading, idle rakes, and penalty costs.  
+4. **Simulate AI Insights:** Preloaded recommendations, dashboards, and charts for decision-making.  
+5. **Support Strategic Decisions:** Aid managers in stockyard selection, dispatch sequencing, and order combination.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Key Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- 🤖 **Preloaded AI Recommendations:** Simulated insights on optimal rake formation and stockyard selection.  
+- 📊 **Dashboard & KPIs:** Visualize total rakes, pending orders, loading efficiency, and cost savings.  
+- 📈 **Interactive Charts:** Bar, pie, and line charts showing dispatch trends, order priorities, and stockyard utilization.  
+- 🚚 **Rake & Order Planning:** Preloaded tables with rake compositions, order lists, and stockyard capacities.  
+- 📑 **Reports Simulation:** Downloadable reports with KPI summaries and AI insights.  
+- 👤 **User-Centric Design:** Authentication screens, profile management, and intuitive navigation.  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 💡 Advantages
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- ⏱ **Time-Saving:** Reduces manual planning effort.  
+- 💰 **Cost Efficiency:** Optimizes stockyard selection and rake utilization.  
+- 🤖 **Predictive Planning:** Simulated AI insights provide actionable recommendations.  
+- ✅ **Error Reduction:** Minimizes misallocation and delayed deliveries.  
+- 🎯 **Strategic Insights:** Data-driven decisions with visual analytics.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌍 Impact
 
-**Use GitHub Codespaces**
+- 🚀 Improves operational efficiency in steel plants and warehouses.  
+- ⏱ Ensures timely delivery to customers and stockyards.  
+- 🚂 Reduces idle rakes and underutilized wagons.  
+- 💵 Lowers total logistics costs and penalties.  
+- 📊 Enhances supply chain planning for large-scale industrial operations.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🎁 Benefits
 
-This project is built with:
+- ⚡ **Enhanced Logistics Efficiency:** Optimal resource utilization.  
+- 😃 **Improved Customer Satisfaction:** Reliable and on-time deliveries.  
+- 💲 **Operational Cost Savings:** Reduced freight, demurrage, and idle costs.  
+- 📈 **Data-Driven Decisions:** Visual dashboards and AI-simulated insights.  
+- 🔧 **Scalability:** Can extend to multiple plants, stockyards, and destinations.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🏁 Conclusion
 
-Simply open [Lovable](https://lovable.dev/projects/20ae0370-4d02-4e8f-9537-19a9d0822432) and click on Share -> Publish.
+**Smart Rake Planner** acts as a **digital logistics assistant**, simulating AI-powered optimization for rake formation.  
+With **preloaded recommendations, interactive dashboards, and visual analytics**, it helps organizations like **SAIL** streamline operations, **reduce costs**, and **improve delivery performance**.  
 
-## Can I connect a custom domain to my Lovable project?
+**🌐 Live Demo:** [https://smart-rake-planner.vercel.app/profile](https://smart-rake-planner.vercel.app/profile)
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Project Category:** Software / Smart Automation  
+**Organization:** Ministry of Steel (MoS) / Steel Authority of India Limited (SAIL)  
+**Theme:** Smart Logistics & AI Simulation
