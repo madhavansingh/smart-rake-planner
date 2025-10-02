@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import AIAssistant from '@/components/AIAssistant';
+import Background3D from '@/components/Background3D';
 import { User, Mail, Briefcase, Shield, Bell, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -20,8 +22,10 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <Background3D />
       <Navbar />
+      <AIAssistant />
       
       <main className="container mx-auto px-6 py-8">
         <div className="mb-8 animate-fade-in">

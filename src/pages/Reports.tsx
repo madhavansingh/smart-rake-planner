@@ -1,4 +1,6 @@
 import Navbar from '@/components/Navbar';
+import AIAssistant from '@/components/AIAssistant';
+import Background3D from '@/components/Background3D';
 import { BarChart3, Download, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { chartData } from '@/data/dummyData';
@@ -10,8 +12,10 @@ const Reports = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <Background3D />
       <Navbar />
+      <AIAssistant />
       
       <main className="container mx-auto px-6 py-8">
         <div className="mb-8 animate-fade-in">

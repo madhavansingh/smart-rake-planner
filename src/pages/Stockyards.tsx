@@ -1,4 +1,6 @@
 import Navbar from '@/components/Navbar';
+import AIAssistant from '@/components/AIAssistant';
+import Background3D from '@/components/Background3D';
 import { stockyards } from '@/data/dummyData';
 import { Warehouse, TrendingUp } from 'lucide-react';
 
@@ -17,8 +19,10 @@ const Stockyards = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <Background3D />
       <Navbar />
+      <AIAssistant />
       
       <main className="container mx-auto px-6 py-8">
         <div className="mb-8 animate-fade-in">

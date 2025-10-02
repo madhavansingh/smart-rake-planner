@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import AIAssistant from '@/components/AIAssistant';
+import Background3D from '@/components/Background3D';
 import { orders } from '@/data/dummyData';
 import { FileText, Search, Filter, Info } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -46,8 +48,10 @@ const Orders = () => {
   });
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <Background3D />
       <Navbar />
+      <AIAssistant />
       
       <main className="container mx-auto px-6 py-8">
         <div className="mb-8 animate-fade-in">

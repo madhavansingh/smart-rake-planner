@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Package, Mail, ArrowLeft, Sparkles, CheckCircle } from 'lucide-react';
+import { Brain, Mail, ArrowLeft, Sparkles, CheckCircle } from 'lucide-react';
+import Background3D from '@/components/Background3D';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -15,27 +16,23 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary via-primary to-primary/90 flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-accent rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
-      </div>
+    <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
+      <Background3D />
 
       <div className="w-full max-w-md relative z-10">
         {/* Logo Section */}
         <div className="text-center mb-8 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent rounded-2xl shadow-ai-glow mb-4 animate-pulse-glow">
-            <Package className="w-8 h-8 text-accent-foreground" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary to-cyan-500 rounded-2xl shadow-ai-glow mb-4 ai-pulse">
+            <Brain className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-4xl font-montserrat font-bold text-gradient-gold mb-2">
             Smart Rake Planner
           </h1>
-          <p className="text-primary-foreground/80 text-sm">Password Recovery</p>
+          <p className="text-muted-foreground text-sm">AI-Powered Password Recovery</p>
         </div>
 
         {/* Reset Card */}
-        <div className="bg-card rounded-2xl shadow-premium-xl p-8 backdrop-blur-sm border border-accent/20 animate-scale-in">
+        <div className="bg-card/95 backdrop-blur-xl rounded-2xl shadow-3xl p-8 border border-secondary/20 animate-scale-in">
           {!sent ? (
             <>
               <h2 className="text-2xl font-bold text-center mb-2 font-montserrat">Forgot Password?</h2>

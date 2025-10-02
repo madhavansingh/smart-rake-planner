@@ -3,6 +3,8 @@ import { TrendingUp, Package, ShoppingCart, Percent, Loader2 } from 'lucide-reac
 import Navbar from '@/components/Navbar';
 import KPICard from '@/components/KPICard';
 import AIRecommendationCard from '@/components/AIRecommendationCard';
+import AIAssistant from '@/components/AIAssistant';
+import Background3D from '@/components/Background3D';
 import { kpis, aiRecommendations, chartData } from '@/data/dummyData';
 import { BarChart, Bar, PieChart, Pie, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Legend } from 'recharts';
 
@@ -25,8 +27,10 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <Background3D />
       <Navbar />
+      <AIAssistant />
       
       <main className="container mx-auto px-6 py-8">
         {/* Greeting Section */}

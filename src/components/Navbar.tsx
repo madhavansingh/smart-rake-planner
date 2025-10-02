@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Package, FileText, Warehouse, BarChart3, User, LogOut } from 'lucide-react';
+import { LayoutDashboard, Package, FileText, Warehouse, BarChart3, User, LogOut, Brain } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -19,19 +19,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primary text-primary-foreground shadow-premium-lg border-b border-accent/20">
+    <nav className="bg-card/95 backdrop-blur-xl text-foreground shadow-premium-xl border-b border-secondary/20 sticky top-0 z-40">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/dashboard" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center shadow-ai-glow group-hover:scale-110 transition-transform">
-              <Package className="w-6 h-6 text-accent-foreground" />
+            <div className="w-10 h-10 bg-gradient-to-br from-secondary to-cyan-500 rounded-lg flex items-center justify-center shadow-ai-glow group-hover:scale-110 transition-transform ai-pulse">
+              <Brain className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-montserrat font-bold text-gradient-gold">
                 Smart Rake Planner
               </h1>
-              <p className="text-xs text-primary-foreground/70">AI-Powered Logistics</p>
+              <p className="text-xs text-secondary/80 flex items-center gap-1">
+                <span className="w-1.5 h-1.5 bg-success rounded-full animate-pulse" />
+                AI-Powered Analytics
+              </p>
             </div>
           </Link>
 
@@ -45,10 +48,10 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 relative ${
                     isActive
-                      ? 'bg-accent text-accent-foreground shadow-md'
-                      : 'text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground'
+                      ? 'bg-gradient-to-r from-secondary/20 to-cyan-500/20 text-secondary shadow-md border border-secondary/30'
+                      : 'text-foreground/70 hover:bg-secondary/10 hover:text-secondary'
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -62,7 +65,7 @@ const Navbar = () => {
           <Button
             onClick={handleLogout}
             variant="ghost"
-            className="text-primary-foreground hover:bg-destructive hover:text-white transition-all"
+            className="text-foreground/70 hover:bg-destructive/10 hover:text-destructive transition-all"
           >
             <LogOut className="w-4 h-4 mr-2" />
             Logout
