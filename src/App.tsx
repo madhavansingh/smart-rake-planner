@@ -13,6 +13,7 @@ import Stockyards from "./pages/Stockyards";
 import Reports from "./pages/Reports";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import { ThemeProvider } from "@/context/theme";
 
 const queryClient = new QueryClient();
 
@@ -21,20 +22,22 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/rakes" element={<RakePlans />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/stockyards" element={<Stockyards />} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <ThemeProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/rakes" element={<RakePlans />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/stockyards" element={<Stockyards />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );

@@ -23,33 +23,45 @@ const Stockyards = () => {
       <Background3D />
       <Navbar />
       <AIAssistant />
-      
+
       <main className="container mx-auto px-6 py-8">
         <div className="mb-8 animate-fade-in">
           <h1 className="text-4xl font-bold font-montserrat text-foreground mb-2 flex items-center gap-3">
             <Warehouse className="w-10 h-10 text-accent" />
             Stockyards
           </h1>
-          <p className="text-muted-foreground">Real-time stockyard monitoring with AI capacity optimization</p>
+          <p className="text-muted-foreground">
+            Real-time stockyard monitoring with AI capacity optimization
+          </p>
         </div>
 
         {/* Stockyard Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {stockyards.map((stockyard, index) => {
-            const utilizationPercent = (stockyard.currentLoad / stockyard.capacity) * 100;
-            
+            const utilizationPercent =
+              (stockyard.currentLoad / stockyard.capacity) * 100;
+
             return (
               <div
                 key={stockyard.id}
                 className="card-premium p-6 hover:scale-105 transition-all animate-slide-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                {/* Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-1">{stockyard.name}</h3>
-                    <p className="text-sm text-muted-foreground">{stockyard.location}</p>
+                    <h3 className="text-xl font-bold text-foreground mb-1">
+                      {stockyard.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {stockyard.location}
+                    </p>
                   </div>
-                  <span className={`inline-flex px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(stockyard.status)}`}>
+                  <span
+                    className={`inline-flex px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(
+                      stockyard.status
+                    )}`}
+                  >
                     {stockyard.status}
                   </span>
                 </div>
@@ -59,7 +71,8 @@ const Stockyards = () => {
                   <div className="flex items-center justify-between text-sm mb-2">
                     <span className="text-muted-foreground">Capacity</span>
                     <span className="font-semibold text-foreground">
-                      {stockyard.currentLoad.toLocaleString()} / {stockyard.capacity.toLocaleString()} tons
+                      {stockyard.currentLoad.toLocaleString()} /{' '}
+                      {stockyard.capacity.toLocaleString()} tons
                     </span>
                   </div>
                   <div className="relative w-full h-3 bg-muted rounded-full overflow-hidden">
@@ -74,12 +87,16 @@ const Stockyards = () => {
                       style={{ width: `${utilizationPercent}%` }}
                     />
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">{utilizationPercent.toFixed(1)}% utilized</p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {utilizationPercent.toFixed(1)}% utilized
+                  </p>
                 </div>
 
                 {/* Materials */}
                 <div className="border-t border-border pt-4">
-                  <p className="text-sm text-muted-foreground mb-2">Materials Available:</p>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Materials Available:
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {stockyard.materials.map((material) => (
                       <span
@@ -93,13 +110,19 @@ const Stockyards = () => {
                 </div>
 
                 {/* AI Insight */}
-                <div className="mt-4 p-3 bg-secondary/5 border border-secondary/20 rounded-lg">
-                  <p className="text-xs text-secondary-foreground flex items-center gap-1">
-                    <TrendingUp className="w-3 h-3" />
+                <div className="mt-4 p-3 bg-secondary/5 border border-secondary/20 rounded-lg bg-white">
+                  <p
+                    className="text-xs flex items-center gap-1 "
+                    style={{ color: 'hsl(var(--secondary-foreground))' }}
+                  >
+                    <TrendingUp className="w-3 h-3 " />
                     <span className="font-medium">AI Insight:</span>
-                    {stockyard.status === 'Full' && ' Consider rerouting to nearby stockyards'}
-                    {stockyard.status === 'Medium' && ' Optimal loading capacity available'}
-                    {stockyard.status === 'Low' && ' High capacity available for new orders'}
+                    {stockyard.status === 'Full' &&
+                      ' Consider rerouting to nearby stockyards'}
+                    {stockyard.status === 'Medium' &&
+                      ' Optimal loading capacity available'}
+                    {stockyard.status === 'Low' &&
+                      ' High capacity available for new orders'}
                   </p>
                 </div>
               </div>

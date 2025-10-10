@@ -107,7 +107,7 @@ const Reports = () => {
               </BarChart>
             </ResponsiveContainer>
             <div className="mt-4 p-3 bg-secondary/10 border border-secondary/30 rounded-lg">
-              <p className="text-sm text-secondary-foreground flex items-center gap-2">
+              <p className="text-sm text-secondary-foreground flex items-center gap-2 text-green-400">
                 <TrendingUp className="w-4 h-4" />
                 <span className="font-medium">AI Insight:</span>
                 Peak efficiency reached in June with 92 dispatches

@@ -91,7 +91,7 @@ export const aiRecommendations: AIRecommendation[] = [
   {
     id: 'AI-001',
     title: 'Combine RAKE-102 and RAKE-105',
-    description: 'Merge these two partially loaded rakes to reduce cost by ₹1.2L',
+    description: 'Merge these partially loaded rakes to reduce cost by ₹1.2L',
     impact: 'high',
     savings: 120000,
   },

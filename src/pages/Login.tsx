@@ -21,63 +21,58 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-white flex items-center justify-center p-4 relative overflow-hidden">
       <Background3D />
 
       <div className="w-full max-w-md relative z-10">
         {/* Logo Section */}
         <div className="text-center mb-8 animate-fade-in">
-          {/* Replace Brain icon with logo.png */}
-          <img 
-            src="/logo.png" 
-            alt="Rake Mind Logo" 
-            className="w-16 h-16 mx-auto mb-4 object-contain"
-          />
-          <h1 className="text-4xl font-montserrat font-bold text-gradient-gold mb-2">
+          {/* Logo removed */}
+          <h1 className="text-4xl font-montserrat font-bold text-blue-700 mb-2">
             Smart Rake Planner
           </h1>
-          <p className="text-muted-foreground text-sm">AI-Powered Logistics Optimization Platform</p>
+          <p className="text-gray-500 text-sm">AI-Powered Logistics Optimization Platform</p>
         </div>
 
         {/* Login Card */}
-        <div className="bg-card/95 backdrop-blur-xl rounded-2xl shadow-3xl p-8 border border-secondary/20 animate-scale-in">
-          <h2 className="text-2xl font-bold text-center mb-2 font-montserrat">Welcome Back</h2>
-          <p className="text-center text-muted-foreground mb-6">Sign in to access your dashboard</p>
+        <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border border-gray-200 animate-scale-in">
+          <h2 className="text-2xl font-bold text-center mb-2 font-montserrat text-gray-900">Welcome Back</h2>
+          <p className="text-center text-gray-500 mb-6">Sign in to access your dashboard</p>
 
           {/* AI Tip */}
-          <div className="bg-secondary/10 border border-secondary/30 rounded-lg p-3 mb-6 flex items-start space-x-2 animate-pulse-slow">
-            <Sparkles className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-            <p className="text-xs text-secondary-foreground">{aiTip}</p>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 flex items-center justify-center space-x-2 animate-pulse-slow">
+            <Sparkles className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
+            <p className="text-xs text-yellow-800">{aiTip}</p>
           </div>
 
           <form onSubmit={handleLogin} className="space-y-5">
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-sm font-medium">Email Address</Label>
+              <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</Label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <Input
                   id="email"
                   type="email"
                   placeholder="admin@sail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="pl-10 h-12 bg-background border-border focus:border-accent transition-all"
+                  className="pl-10 h-12 bg-white border-gray-300 focus:border-yellow-500 transition-all text-gray-900"
                   required
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-sm font-medium">Password</Label>
+              <Label htmlFor="password" className="text-sm font-medium text-gray-700">Password</Label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <Input
                   id="password"
                   type="password"
                   placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="pl-10 h-12 bg-background border-border focus:border-accent transition-all"
+                  className="pl-10 h-12 bg-white border-gray-300 focus:border-yellow-500 transition-all text-gray-900"
                   required
                 />
               </div>
@@ -85,34 +80,34 @@ const Login = () => {
 
             <div className="flex items-center justify-between text-sm">
               <label className="flex items-center space-x-2 cursor-pointer">
-                <input type="checkbox" className="rounded border-border text-accent focus:ring-accent" />
-                <span className="text-muted-foreground">Remember me</span>
+                <input type="checkbox" className="rounded border-gray-300 text-gray-500 focus:ring-gray-600" />
+                <span className="text-gray-500">Remember me</span>
               </label>
-              <Link to="/forgot-password" className="text-accent hover:text-accent/80 font-medium transition-colors">
+              <Link to="/forgot-password" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">
                 Forgot Password?
               </Link>
             </div>
 
             <Button
               type="submit"
-              className="w-full h-12 btn-primary-premium text-base"
+              className="w-full h-12 bg-blue-500 hover:bg-blue-700 text-white text-base font-semibold rounded-lg shadow transition-all"
             >
               Sign In
             </Button>
 
             <div className="relative my-6">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-border" />
+                <div className="w-full border-t border-gray-200" />
               </div>
               <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
+                <span className="bg-white px-2 text-gray-400">Or continue with</span>
               </div>
             </div>
 
             <Button
               type="button"
               variant="outline"
-              className="w-full h-12 border-border hover:bg-muted transition-all"
+              className="w-full h-12 bg-white text-black hover:bg-black hover:text-white transition-all"
             >
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -124,9 +119,9 @@ const Login = () => {
             </Button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-muted-foreground">
+          <p className="mt-6 text-center text-sm text-gray-500">
             Don't have an account?{' '}
-            <Link to="/signup" className="text-accent hover:text-accent/80 font-medium transition-colors">
+            <Link to="/signup" className="text-blue-600 hover:text-blue-700 font-medium transition-colors">
               Sign up
             </Link>
           </p>
