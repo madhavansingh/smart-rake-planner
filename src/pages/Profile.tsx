@@ -79,8 +79,8 @@ const Profile = () => {
               </div>
             </div>
 
-            <div className="mt-6 p-4 bg-secondary/10 border border-secondary/30 rounded-lg">
-              <p className="text-xs text-secondary-foreground flex items-center gap-2 text-green-600">
+            <div className="mt-6 p-4 bg-secondary/10 border border-secondary/30 rounded-lg bg-white">
+              <p className="text-xs text-secondary-foreground flex items-center gap-2 ">
                 <Sparkles className="w-3 h-3" />
                 Your plan completion rate is <span className="font-bold">87%</span>
               </p>
